@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+  int a,b;
+
+printf("enter your birth year:\n");
+scanf("%d", &a);
+printf("enter your height in m:\n");
+scanf("%d", &b);
+printf("your birth year is%d\n your height is%d:\n", a, b);
+ return 0;
+}

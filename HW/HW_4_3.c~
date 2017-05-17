@@ -1,0 +1,17 @@
+
+
+#include <stdio.h>
+ 
+int main()
+{
+    int val1 = 0x1234;
+    int val2 = 0x5678;
+    
+    int res;
+ 
+    res = val1 & val2;
+ 
+    printf("%x\n", res);
+ 
+    return 0;
+}

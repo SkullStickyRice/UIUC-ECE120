@@ -1,0 +1,57 @@
+1. Analyzing program trace
+x3000	ADD R1, R1, #0	;R1 <- R1 + 0
+x3001	STI R1, #4	;M[M[x3006]] <- R1
+x3002	LDI R2, #4	;R2 <- M[M[x3007]]
+x3003	ADD R2, R2, #1	;
+X3004	PUTSP		;
+X3005	BR #48		;branch will never be taken
+x3006	.FILL	x2000	;
+x3007	.FILL	x1000	;
+
+2. Reverse-engineering the program
+x4000	LDR R5, R1, #6 ;R5 <- M[R1 + 6]
+
+3. Assembly and labels
+LD R5, RESULT		;X2000
+SAVE	.FILL X0000	;X2001
+RESULT	.FILL X5120	;X2002
+
+ANS:0010 101 000000001	;x2A01
+
+4. Assembly and labels
+ANS: because when the assembler translate the program, it will reads the label names as the logical operators, which will cause error in reading. 
+
+5. Symbol table
+LOOP	x401B
+DONE	x401F
+RESULT	x4021
+M1	x4022
+
+6. .END vs. HALT
+ANS: .END indicates the end of the program text, it has nothing to do with stopping the execution of the program; while HALT is stppoing the actual program. that is being executed.
+
+7. Storing data in memory
+ANS: part a) is the actual LC insructions to store x33 into M[x2000], where part b) is the assembler program that stores x33 into M[x2000].
+
+8. Pesudo-op
+ANS: it writes ABCDE into the current address line, but since it will overflow, the LC-3 assembles might shows error. 
+
+9. TRAP
+ANS:
+a) 2^6=64
+b) No, we can't. Because BRnzp only has 9 bits PCoffset. In many cases, the change in PC is too large that 9 bits are not enough to represent.
+c) 1. reads x25 in memory.
+
+10. Program meaning
+ANS: if A is an odd number, stores 1 into result; if A is an even number, stores 0 into result. 
+
+11. TRAPS again
+MAR <- ZEXT(trapvector)
+MDR <- MEM[MAR]
+R7 <- PC
+PC <- PC + [8:11]
+PC <- MDR
+PC <- R7
+
+ANS: 6 lines
+

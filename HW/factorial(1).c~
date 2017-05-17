@@ -1,0 +1,30 @@
+/*
+ *	
+ *  Factorial!: Computes the factorial of a positive integer
+ *
+ */
+
+#include <stdio.h>
+
+int main()
+{
+    /* Initialization */
+    int factorial;   /* input to be entered by the user */
+    int result;      /* result,  factorial! */
+
+    printf("Please enter a number: ");
+    scanf("%d", &factorial);
+
+    /* Compute factorial */
+    result = 1;
+    while(factorial > 0)
+    {
+        result *= factorial;
+        factorial--; 
+    }
+
+    /* Print the answer */
+    printf("%d\n", result);
+
+    return 0;
+}
