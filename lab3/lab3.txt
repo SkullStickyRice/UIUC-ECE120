@@ -1,0 +1,6 @@
+a) invalid inpiut!
+b) Mystery program
+c) 6 
+   3 
+   1
+

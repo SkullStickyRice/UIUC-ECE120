@@ -1,0 +1,3 @@
+Missing program output message 'Mystery program...'
+
+Total: 5/6
