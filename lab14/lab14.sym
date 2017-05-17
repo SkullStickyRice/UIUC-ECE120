@@ -1,0 +1,18 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	OUTLOOP           3006
+//	INLOOP            300B
+//	DETERM            3014
+//	PSPACE            301A
+//	LSHIFT            301D
+//	FINISH            3027
+//	LINE              3028
+//	STRING            3029
+//	SPACE             302A
+//	SPRITE            302B
+//	MASK              302C
+//	ENTER             302D
+//	FONT_DATA         302E
+
