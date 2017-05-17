@@ -1,0 +1,38 @@
+# //  ModelSim SE 10.1d Nov  1 2012 Linux 2.6.32-504.3.3.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L lab5_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll} -pli {"/software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll"} lab5_lib.Full_Adder(struct) 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# Loading /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.full_adder(struct)#1
+# Loading work.my_xor(struct)#1
+add wave  \
+sim:/full_adder/Cin \
+sim:/full_adder/a \
+sim:/full_adder/b \
+sim:/full_adder/Cout \
+sim:/full_adder/S
+gedit full_adder.do
+do full_adder.do
+run 90
+add wave  \
+sim:/full_adder/Cin \
+sim:/full_adder/a \
+sim:/full_adder/b \
+sim:/full_adder/Cout \
+sim:/full_adder/S
+# Causality operation skipped due to absense of debug database file
+# error writing "file19": broken pipe
+# Postscript write failed: couldn't execute "'lpr": no such file or directory
+# error writing "file21": broken pipe

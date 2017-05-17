@@ -1,0 +1,1 @@
+ -L lab5_lib -l transcript.txt -i -t ns -multisource_delay latest +typdelays lab5_lib.Full_Adder(struct)
