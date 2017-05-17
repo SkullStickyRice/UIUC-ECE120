@@ -1,0 +1,26 @@
+Question 1: Describe the errors that occur when trying to assemble lab5_code.asm. Identify the cause of each error.
+ANS:
+line 14: illegal operands for missing opcpde, there is no .ORIG.
+line 16: instruction appears before .ORIG, there is no .ORIG.
+line 17: constant outside of allowed range, LD only takes the offset of 2^8 to 2^8-1.
+line 19: illegal operands for ADD, there is one more ",".
+line 30: constant outside of allowed range, LD only takes the offset of 2^8 to 2*8-1.
+line 32: label OUTERLOOP has already appeared, BRpz should be BRzp.
+line 35: constant outside of allowed range, ST only takes the offset of 2^8 to 2^8-1.
+line 43: no .END directive found, there is no .END. 
+
+
+
+Question 2: For each label in the code, write down the corresponding memory location. 
+ANS:
+OUTERLOOP: x3004
+INNERLOOP: X3005
+INPUT:x300E
+ZERO:X300F
+DECREMENT:X3010
+RESULT:X3011
+
+
+
+Question 3: Between using labels and explicit memory locations/offsets, which one makes the most sense, and why?
+ANS: lables are more convinient. we can save time by use it. bu using lables, we do not need to consider PC and offsets to find out the address, which is easy to get it wrong. 
