@@ -1,0 +1,38 @@
+# //  ModelSim SE 10.1d Nov  1 2012 Linux 2.6.32-504.3.3.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L lab7_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll} -pli {"/software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll"} lab7_lib.lab9_vendingmachine(struct) 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# Loading /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.lab9_vendingmachine(struct)#1
+# Loading work.lab9_state(struct)#1
+# Loading work.vending_machine(struct)#1
+add wave  \
+sim:/lab9_vendingmachine/T \
+sim:/lab9_vendingmachine/clk \
+sim:/lab9_vendingmachine/A \
+sim:/lab9_vendingmachine/P \
+sim:/lab9_vendingmachine/S0_next \
+sim:/lab9_vendingmachine/S1_next \
+sim:/lab9_vendingmachine/S2_next
+gedit insert_coins.do
+do insert_coins.do
+# ** Error: (vish-4008) Object '/load' not found.
+# Error in macro ./insert_coins.do line 15
+# ** Error: (vish-4008) Object '/load' not found.
+# 
+#     while executing
+# "force /load 1 @0"
+run 200
+gedit insert_coins.do

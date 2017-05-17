@@ -1,0 +1,133 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/xli146/ece120/lab7/lab7_lib/work
+T_opt
+VfcSU;N524Szz155f=SIjl2
+04 15 6 work vending_machine struct 1
+=1-a0d3c118526a-54f63e36-1f4d6-fd4
+Z1 o-quiet +acc -auto_acc_if_foreign -work lab7_lib -L lab7_lib
+n@_opt
+Z2 OE;O;10.1d;51
+Z3 d/home/xli146/ece120/lab7/lab7_lib/work
+T_opt1
+VY6N2=@;jcm<e8P76S1R8K2
+04 19 6 work lab9_vendingmachine struct 1
+=1-a0d3c112a237-550b7ca1-4774d-398f
+R1
+n@_opt1
+R2
+Elab9_state
+Z4 w1426816152
+Z5 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R3
+Z8 8/home/xli146/ece120/lab7/lab7_lib/hdl/lab9_state_struct.vhd
+Z9 F/home/xli146/ece120/lab7/lab7_lib/hdl/lab9_state_struct.vhd
+l0
+L13
+VXGh7iU3HB@`zlQ28X<QF63
+Z10 OE;C;10.1d;51
+32
+Z11 !s108 1426816153.474773
+Z12 !s90 -work|lab7_lib|-nologo|-f|/tmp/Files0|
+Z13 !s107 /home/xli146/ece120/lab7/lab7_lib/hdl/lab9_vendingmachine_struct.vhd|/home/xli146/ece120/lab7/lab7_lib/hdl/lab9_state_struct.vhd|
+Z14 o-work lab7_lib -nologo
+Z15 tExplicit 1
+!s100 0;?jkSn0lc[m^WlJgTQ8j2
+!i10b 1
+Astruct
+DEx4 work 10 lab9_state 0 22 XGh7iU3HB@`zlQ28X<QF63
+R5
+R6
+R7
+l54
+L42
+VgMdHaGa5BE>CjY<[NCfH`0
+R10
+32
+R11
+R12
+R13
+R14
+R15
+!s100 9VgUAl]VW5O0WFHE@h[d^1
+!i10b 1
+Elab9_vendingmachine
+R4
+R5
+R6
+R7
+R3
+Z16 8/home/xli146/ece120/lab7/lab7_lib/hdl/lab9_vendingmachine_struct.vhd
+Z17 F/home/xli146/ece120/lab7/lab7_lib/hdl/lab9_vendingmachine_struct.vhd
+l0
+L13
+VdUal[?9HT>`DC0S=5o_`^2
+R10
+32
+R11
+R12
+R13
+R14
+R15
+!s100 6<FE]CY_MFH:7X=<[h3c82
+!i10b 1
+Astruct
+DEx8 lab7_lib 15 vending_machine 0 22 iL>KQV7PASWCP8SX6cL8S1
+DEx8 lab7_lib 10 lab9_state 0 22 XGh7iU3HB@`zlQ28X<QF63
+DEx4 work 19 lab9_vendingmachine 0 22 dUal[?9HT>`DC0S=5o_`^2
+R5
+R6
+R7
+l94
+L42
+VP=;z2K^3;Qam2b:2KRe=o2
+R10
+32
+R11
+R12
+R13
+R14
+R15
+!s100 HKfZRSRn7<Iz4SiBdR;Kf2
+!i10b 1
+Evending_machine
+Z18 w1425423920
+R5
+R6
+R7
+R3
+Z19 8/home/xli146/ece120/lab7/lab7_lib/hdl/vending_machine_struct.vhd
+Z20 F/home/xli146/ece120/lab7/lab7_lib/hdl/vending_machine_struct.vhd
+l0
+L13
+ViL>KQV7PASWCP8SX6cL8S1
+R10
+32
+Z21 !s108 1425423920.639180
+R12
+Z22 !s107 /home/xli146/ece120/lab7/lab7_lib/hdl/vending_machine_struct.vhd|
+R14
+R15
+!s100 @U@mmln]_<KN]ZiQkXbS33
+!i10b 1
+Astruct
+DEx4 work 15 vending_machine 0 22 iL>KQV7PASWCP8SX6cL8S1
+R5
+R6
+R7
+l55
+L40
+VD9[2UDlzgRRkX^:8N]lCP1
+R10
+32
+R21
+R12
+R22
+R14
+R15
+!s100 NjVE_<HhKIf:lcl]M1g9R3
+!i10b 1
