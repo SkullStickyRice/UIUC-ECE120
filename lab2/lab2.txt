@@ -1,0 +1,107 @@
+
+Signed integer computation
+
+1. What is the largest value representable in 16-bit signed format? Smallest?
+Ans:
+	largest value: 32767 in decimal 
+	Smallest value: -32768 in decimal
+
+2. What is the result of the third computation? Why?
+Ans: the result is -22536. it is negative number because when add 21000 to 22000, it is 43000 in decimal, which is A7FB in Hex and 1010011111111000 in 16bit. since it is signed format, it is a begative number due to the MLB bit 1. it is a overflow.
+	
+3. Why does the fourth computation overflow, but not the fifth?
+Ans: because 32767+1=32768 in decimal. the largest vaule of 16bit signed format is 32767, therefore, it's a overflow. the result of fifth is -32768, it is the smallest valus for 16bit signed format. therefore, it's not a overflow. 
+
+4. If you were to start at 0, and increment repeatedly (add 1), what pattern would you see (in signed mode)?
+Ans: it will increase by 1 at a time and it will change to negative when the most left bit become 1, which is when the most left 4 bits become 8 in hex.
+
+Unsigned integer computation
+
+1. What is the largest value representable in 16-bit unsigned format? Smallest?
+ANS: 
+	Largest:hex-FFFF, 65535 in decimal 
+	Smallest: hex-0000, 0 in decimal 
+
+2. What result do you get from the first computation? Why?
+ANS: 65437 in decial and xff9d in hex. it is wrong we can't get -199 in unsigned bit mode.  
+
+3. Why doesn't the second or third computation overflow?
+ANS: because they are unsigned number, the MLB does not mean negative. and their result is under 65535, therefore, it is not overflow
+
+4. If you were to start at 0, and increment repeatedly (add 1), what pattern would you see (in unsigned mode)?
+ANS, it will increase by 1 at a time until gets to FFFF in hex
+
+5. What are the advantages and disadvantages of unsigned formats (compared to signed formats)?
+ANS: unsigned number can not have negative vaule in decimal, it will have overflow if it's a negative number. The signed number can compute from negative number and positive number. 
+
+Multiplication, division, modulus
+
+1. What result do you get in the second and third computations? Why?
+Ans:the second computation results in -15536 in decimal, it is wrong because it has the 100*500 is bigger than 32767, and -100*500 is smaller than -32768, whcih is a overflow
+
+2. What results do you get from computations 4-7? Why? (Hint: can signed 16-bit encoding represent fractions?)
+ANS: for computation 4-7, the result only showed the integer part of the real results. it is because 16bit signed number will not give us the fractions without the dot.
+
+3. Does the result from computations 4-7 get rounded to the nearest integer? If not, what actually happens? Where might this behavior be useful? (Hint: what if you wanted to divide 11 candies between 3 people?)
+ANS: the result from computations 4-7 does not get rouned to the nearest integer. it result in the closest possible integer. 
+
+4. What does the modulus operator do for positive integers?
+ANS: the modulus operator give you the remainder points.
+
+5. What happens when you divide by 0? Modulus with 0? What happens to the binary-calculator program? Why might this be a good thing? (Hint: remember the discussion introduction?)
+ANS: it says "floating point exception" in both causes, and the program automically closed.  because mathematicly, when a number divide by 0, the result will be infinity, which will occur a overflow in floating point. 
+
+6. Excluding division by 0, characterize the behavior of the modulus operation for positive and negative divisors and dividends (for a total of 2x2 = 4 combinations).
+ANS: positive divisors and dividends; positive divisors and negative dividens; negative divisors and dividends; negative divisors and positive dividends 
+
+Floating point
+
+1. Why is there an error in the fourth computation, but not the third? (Hint: how do you encode 0.25 and 0.3 in floating point?)
+ANS: because the actual result is 0.3, but it will never gets to 0.3 in binary. 
+
+2. How does the result of the fifth computation compare to the fourth? Explain. (Hint: look at the hex representations of the results. How does the floating point format handle negative numbers?)
+ANS:the MLB of floating point is the sign bit. 1 is represnt as negative, 0 represents positive. floating point does not use 2's complement to represent negative numbers
+
+3. Mathematically, would you expect the same results in computations 6 and 7? Do you observe this result experimentally? Explain. (Hint: try stepping through each computation)
+ANS: mathematically it should get the same result as -4.9999. But since binary bits will never get close to 0.9999 in 23 bit fractoin part, therefore, there is a overflow.  
+4. What happens if you try computation 6 in double-precision (64-bit) floating-point mode? Why?
+ANS: it will get the right answer. because it has more fraction part to represent it. 
+
+5. Why is there noticeable error in computation 8, but not 9? (Hint: think of multiplying floating point numbers like multiplying two numbers in scientific notation, how do you do it?)
+ANS: because 9000+0.01=9000.01 mathematically, but since to convert .01 to BCD will run out the 23 fractoin bits, there will be a error. When multiplying, it just changed the exponent part. 
+
+6. The root cause of the Ariane 5 rocket failure was isolated to the conversion of a floating point number, which stored the horizontal component of the rocket's velocity, to a 16-bit signed integer. What is the most likely cause of the failure? (Hint: this wasn't some small rounding error, the computed velocity was way off, causing the system to go haywire)
+ANS: non-accurate fraction bits and exponent part. 
+
+
+--------------------------
+
+Additional problems
+
+Completion of these additional problems is not required for lab2 credit. However, problems similar to these may show up in a future exam.
+
+Bitwise logic
+
+1. What are computations 1-3 doing? (what does a function that computes f(x) = x & 1 do?)
+ANS: make 1 to do add logic operation with every bits in the other number(in binary). if it's 1 and 1, then result in 1. then use this result to do add logic operation with next bit.
+
+2. What are computations 4-6 doing? (hint: suppose each of the 16 bits bit represents a light switch that is either on or off)
+ANS: computation 4 is doing or logic operations. it is campring each bit. get the result from the first and second number, and then coputate with the thrid number. For the 4th and 5th computation, they did the same thing for the first few numbers, and then use the result to do add logic operations with the last number. or logic means that if one of bit is on, then it is on. if there is two lights, when one of the light is on, then the whole room has light.
+
+3. Continuing with the a light switch (or similar) analogy, what is computation 7 doing?
+ANS: if both loght is on, then the room is competely with light. if one of them is on, it is not competely with light. therefore, computation 7 is campring each bit to 0 by using add logic operation. 
+
+4. Why does computation 8 produce a nonzero result, but computation 9 produces zero?
+ANS: 
+5. What is computation 10 doing? (what does a function that computes f(x) = x & ~1 do?)
+6. Compare the results of computation 11 and 12. Can you explain?
+
+
+Bit shifting
+
+1. Looking at the results from computations 1-5, do you see a pattern? What's going on? What does the left-shift operation effectively do?
+2. Given this definition of “<<”, is the result from computation #6 what you would expect? What's happening?
+3. Why is the result from computation #7 negative?
+4. Looking at the results from computations 8-11, what does the right-shift operation effectively do? (Hint: Try doing integer divisions with the same divisor)
+5. Thinking of the right-shift operation as a shift operation, there's a simple explanation for why the result of computation 12 is 0. What is it? (Hint: how does a computer encode decimal 10 in signed 16-bit?)
+
