@@ -1,0 +1,25 @@
+; ECE120 SP15 Lab 12
+; Author: xli146
+; This is the file you will use for Lab 12 assignment
+; Make sure to comment your code properly and don't exceed 
+; the line limitation for this assignment.  Good luck!
+
+; R2 is used as a temporary register which holds the memory of R3
+; R3 holds the address of numbers
+; R4 is used as a counter
+; R5 holds the sum of positive numbers
+
+0011 0001 0000 0000 ; x3100 - starting address of the program
+
+; The program description and code starts here
+1110 011 000110001 ; x3100	R3 <- PC+31	initalize R3 as a pointer to address x3132
+0001 100 100 1 01010; x3101	R4 <- R4+10 	initializa R4 to valus 10 as a counter
+0101 101 101 1 00000; x3102	R5 <- 0	initialize R5 to 0
+0101 010 010 1 00000; x3103	R2 <- 0	initialize R2 to 0
+0110 010 011 000000; x3104	R2 <- M[R3+0]	load address of R3 to R2
+0000 100 000000001; x3105	if n, PC <- PC+1	if n, compare next number
+0001 101 101 000 010; x3106	R5 <-R5+R2 	load R2 to R5
+0001 011 011 1 00001; x3107	R3 <- R3+1	increment R3 by 1
+0001 100 100 1 11111; x3108	R4 <- R4-1	decrement R4 by 1
+0000 001 111111001; x3109	if p, PC <- PC-7	if R4 is positive, start from compare with R2 again 
+1111 0000 00100101; x3110	HALT
