@@ -1,0 +1,49 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/xli146/ece120/lab7_part2/lab7_part2_lib/work
+T_opt
+VXa^H=DY57UfO5HVSa^j`51
+04 10 6 work lab7_part2 struct 1
+=1-a0d3c118526a-54f642ef-6a857-13aa
+o-quiet +acc -auto_acc_if_foreign -work lab7_part2_lib -L lab7_part2_lib
+n@_opt
+OE;O;10.1d;51
+Elab7_part2
+Z1 w1425425129
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 d/home/xli146/ece120/lab7_part2/lab7_part2_lib/work
+Z6 8/home/xli146/ece120/lab7_part2/lab7_part2_lib/hdl/lab7_part2_struct.vhd
+Z7 F/home/xli146/ece120/lab7_part2/lab7_part2_lib/hdl/lab7_part2_struct.vhd
+l0
+L13
+VZA[a2]kX[PjZi=aZciaa`1
+Z8 OE;C;10.1d;51
+32
+Z9 !s108 1425425130.009728
+Z10 !s90 -work|lab7_part2_lib|-nologo|-f|/tmp/Files0|
+Z11 !s107 /home/xli146/ece120/lab7_part2/lab7_part2_lib/hdl/lab7_part2_struct.vhd|
+Z12 o-work lab7_part2_lib -nologo
+Z13 tExplicit 1
+!s100 AEh^U23;MG[^I?lBDAWn]3
+!i10b 1
+Astruct
+DEx4 work 10 lab7_part2 0 22 ZA[a2]kX[PjZi=aZciaa`1
+R2
+R3
+R4
+l55
+L40
+Vbl2?h1PbJHi0^e=zQiNDg3
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 Hn<dHH?heV@N3LoG`cng01
+!i10b 1

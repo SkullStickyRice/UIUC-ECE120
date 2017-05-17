@@ -1,0 +1,44 @@
+# //  ModelSim SE 10.1d Nov  1 2012 Linux 2.6.32-504.3.3.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L lab7_part2_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll} -pli {"/software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll"} lab7_part2_lib.lab7_part2(struct) 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# Loading /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.lab7_part2(struct)#1
+add wave  \
+sim:/lab7_part2/S0 \
+sim:/lab7_part2/S1 \
+sim:/lab7_part2/S2 \
+sim:/lab7_part2/A \
+sim:/lab7_part2/P
+gedit lab7_part2.do
+do lab7_part2.do
+run 80
+gedit lab7_part2.do
+do my_NAND.do
+# ** Error: Time value must be greater than "now": 0
+# Error in macro ./my_NAND.do line 1
+# Time value must be greater than "now": 0
+#     while executing
+# "force /S2 0 @0"
+run 80
+# 0
+# 
+add wave  \
+sim:/lab7_part2/S0 \
+sim:/lab7_part2/S1 \
+sim:/lab7_part2/S2 \
+sim:/lab7_part2/A \
+sim:/lab7_part2/P
+gedit my_NAND.do
