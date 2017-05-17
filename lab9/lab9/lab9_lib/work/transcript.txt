@@ -1,0 +1,31 @@
+# //  ModelSim SE 10.1d Nov  1 2012 Linux 2.6.32-504.3.3.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L lab9_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll} -pli {"/software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll"} lab9_lib.lab9_vendingmachine(struct) 
+# Loading /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.lab9_vendingmachine(struct)#1
+# Loading work.next_state_logic(struct)#1
+# Loading work.lab7_control_logic(struct)#1
+gedit insert_coins.do
+add wave  \
+sim:/lab9_vendingmachine/T \
+sim:/lab9_vendingmachine/clk \
+sim:/lab9_vendingmachine/A \
+sim:/lab9_vendingmachine/P \
+sim:/lab9_vendingmachine/S0_next \
+sim:/lab9_vendingmachine/S1_next \
+sim:/lab9_vendingmachine/S2_next
+do insert_coins.do
+run 200
+gedit insert_coins.do
+# The connection to HDS has been closed 

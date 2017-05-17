@@ -1,0 +1,125 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/xli146/ece120/lab9/lab9/lab9_lib/work
+T_opt
+VY6c[?ADPX2bZ4]@4U2lgH3
+04 19 6 work lab9_vendingmachine struct 1
+=1-40a8f03f7692-5508a1f8-3a5e8-4011
+o-quiet +acc -auto_acc_if_foreign -work lab9_lib -L lab9_lib
+n@_opt
+OE;O;10.1d;51
+Elab7_control_logic
+Z1 w1426629096
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 d/home/xli146/ece120/lab9/lab9/lab9_lib/work
+Z6 8/home/xli146/ece120/lab9/lab9/lab9_lib/hdl/lab7_control_logic_struct.vhd
+Z7 F/home/xli146/ece120/lab9/lab9/lab9_lib/hdl/lab7_control_logic_struct.vhd
+l0
+L13
+VPz]Qc5O<]H8VcCkeVSb5o0
+Z8 OE;C;10.1d;51
+32
+Z9 !s108 1426629096.897551
+Z10 !s90 -work|lab9_lib|-nologo|-f|/tmp/Files0|
+Z11 !s107 /home/xli146/ece120/lab9/lab9/lab9_lib/hdl/lab9_vendingmachine_struct.vhd|/home/xli146/ece120/lab9/lab9/lab9_lib/hdl/lab7_control_logic_struct.vhd|/home/xli146/ece120/lab9/lab9/lab9_lib/hdl/next_state_logic_struct.vhd|
+Z12 o-work lab9_lib -nologo
+Z13 tExplicit 1
+!s100 ?oTCGYl=oLEXGK=LL@OJ`3
+!i10b 1
+Astruct
+DEx4 work 18 lab7_control_logic 0 22 Pz]Qc5O<]H8VcCkeVSb5o0
+R2
+R3
+R4
+l55
+L40
+V5Bg>F0<PKbe`P:=S98mEK2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 6I16ekL6l@JCgE3LA:bSf2
+!i10b 1
+Elab9_vendingmachine
+R1
+R2
+R3
+R4
+R5
+Z14 8/home/xli146/ece120/lab9/lab9/lab9_lib/hdl/lab9_vendingmachine_struct.vhd
+Z15 F/home/xli146/ece120/lab9/lab9/lab9_lib/hdl/lab9_vendingmachine_struct.vhd
+l0
+L13
+VSnTQ1ez^n5TmG:Do5jzU23
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 6<FE]CY_MFH:7X=<[h3c82
+!i10b 1
+Astruct
+DEx8 lab9_lib 18 lab7_control_logic 0 22 Pz]Qc5O<]H8VcCkeVSb5o0
+DEx8 lab9_lib 16 next_state_logic 0 22 F>LUIdj]W9SHVWEMX^<;h0
+DEx4 work 19 lab9_vendingmachine 0 22 SnTQ1ez^n5TmG:Do5jzU23
+R2
+R3
+R4
+l94
+L42
+VG6B19gEMhjC6PFkS1kf>20
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 6JDC;?<mSdMz@mSGnQ^AW0
+!i10b 1
+Enext_state_logic
+Z16 w1426628779
+R2
+R3
+R4
+R5
+Z17 8/home/xli146/ece120/lab9/lab9/lab9_lib/hdl/next_state_logic_struct.vhd
+Z18 F/home/xli146/ece120/lab9/lab9/lab9_lib/hdl/next_state_logic_struct.vhd
+l0
+L13
+VF>LUIdj]W9SHVWEMX^<;h0
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 YUEMYcOAe3e9WLO1QWXR12
+!i10b 1
+Astruct
+DEx4 work 16 next_state_logic 0 22 F>LUIdj]W9SHVWEMX^<;h0
+R2
+R3
+R4
+l54
+L42
+VZTiXLjUo_gdz]Y`D7j9N=0
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 ?<[2>c[]k2E`QNfeH`8^K2
+!i10b 1

@@ -1,0 +1,1 @@
+ -L lab9_lib -l transcript.txt -i -t ns -multisource_delay latest +typdelays lab9_lib.lab9_vendingmachine(struct)
