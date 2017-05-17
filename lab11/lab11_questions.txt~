@@ -1,0 +1,9 @@
+QUESTION 1.  Read through the program lab11.bin. What do you expect the program to do? More specifically, which register will the program modify when it is run, and what will it contain when the program finishes? (You can probably figure this out merely by reading the comments provided in lab11.bin.)
+
+ANSWER: this program will store the volue of 12 plus cleared R2 in to register 2. 
+
+
+QUESTION 2.  Explain in a few sentences why the ability to step through a program (run one instruction at a time) is a very useful tool for debugging a program. Debugging is the process of finding and correcting bugs (or errors) in a program. Hint: Finding a bug is often much more difficult than correcting it.
+
+ANSWER: run the LC-3 step by step will help us to see the on e instruction at a time, thus we can see which step gives out the result that we don't expect. 
+
